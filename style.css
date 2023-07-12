@@ -1,0 +1,156 @@
+:root {
+  /* Primary Colors */
+
+  --Blue: hsl(246, 80%, 60%);
+
+  /* (work) */
+  --Light-red: hsl(15, 100%, 70%);
+
+  /* (play) */
+  --Soft-blue: hsl(195, 74%, 62%);
+
+  /* (study) */
+  --Light-red: hsl(348, 100%, 68%);
+
+  /* (exercise) */
+  --Lime-green: hsl(145, 58%, 55%);
+
+  /* (social) */
+  --Violet: hsl(264, 64%, 52%);
+
+  /* (self care) */
+  --Soft-orange: hsl(43, 84%, 65%);
+
+  /* Neutral Colors */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+
+  /* Typography */
+  /* (card titles e.g. Work, Play) */
+  --font-size: 1.125rem;
+
+  /* Font */
+  --Rubik: "Rubik";
+}
+
+/* Use Board-Box Model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding: 0;
+  font-family: var(--Rubik);
+  background-color: var(--Very-dark-blue);
+  color: var(--Pale-Blue);
+  font-size: var(--font-size);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100lvh;
+  overflow: auto;
+}
+main {
+  margin: 0 1em;
+  /* position: relative;
+  z-index: 5; */
+}
+
+.card-container {
+   position: relative;
+  z-index: 3;
+  background-color: var(--Dark-blue);
+  display: flex;
+  flex-flow: column;
+  border-radius: 15px;
+  /* overflow: hidden; */
+  margin-bottom: 1em;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--Blue);
+  padding: 1.5em 1em;
+  border-radius: 15px;
+  /* border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; */
+}
+
+.profile-pix {
+  flex-basis: 25%;
+  margin-right: auto;
+}
+
+.profile-pix img {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  flex-basis: 70%;
+  font-weight: 400;
+}
+.profile h1 span {
+  display: block;
+  font-size: 0.65em;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: var(--Dark-blue); */
+  font-size: var(--font-size);
+  padding: 1em;
+}
+
+.duration h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.task-icon {
+  /* height: 15rem; */
+  display: flex;
+  justify-content: end;
+  background-color: var(--Light-red);
+  /* background-image: url(./assets/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-size: 20%; */
+  padding-right: 1em;
+}
+
+.task-icon img {
+  position: relative;
+  bottom: 5px;
+  z-index: 1;
+}
+
+.card {
+  padding: 1.5em 1em; 
+}
