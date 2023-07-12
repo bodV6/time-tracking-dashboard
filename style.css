@@ -4,22 +4,22 @@
   --Blue: hsl(246, 80%, 60%);
 
   /* (work) */
-  --Light-red: hsl(15, 100%, 70%);
+  --Light-red-work: hsl(15, 100%, 70%);
 
   /* (play) */
-  --Soft-blue: hsl(195, 74%, 62%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
 
   /* (study) */
-  --Light-red: hsl(348, 100%, 68%);
+  --Light-red-study: hsl(348, 100%, 68%);
 
   /* (exercise) */
-  --Lime-green: hsl(145, 58%, 55%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
 
   /* (social) */
-  --Violet: hsl(264, 64%, 52%);
+  --Violet-social: hsl(264, 64%, 52%);
 
   /* (self care) */
-  --Soft-orange: hsl(43, 84%, 65%);
+  --Soft-orang-self-care: hsl(43, 84%, 65%);
 
   /* Neutral Colors */
   --Very-dark-blue: hsl(226, 43%, 10%);
@@ -76,19 +76,16 @@ body {
 }
 main {
   margin: 0 1em;
-  /* position: relative;
-  z-index: 5; */
 }
 
 .card-container {
-   position: relative;
-  z-index: 3;
   background-color: var(--Dark-blue);
   display: flex;
   flex-flow: column;
   border-radius: 15px;
   /* overflow: hidden; */
   margin-bottom: 1em;
+  position: relative;
 }
 
 .profile {
@@ -135,22 +132,28 @@ main {
 }
 
 .task-icon {
-  /* height: 15rem; */
+  height: 5rem;
   display: flex;
   justify-content: end;
-  background-color: var(--Light-red);
-  /* background-image: url(./assets/images/icon-work.svg);
-  background-repeat: no-repeat;
-  background-size: 20%; */
+  background-color: var(--Light-red-work);
   padding-right: 1em;
+  border-radius: 15px;
 }
 
 .task-icon img {
-  position: relative;
-  bottom: 5px;
-  z-index: 1;
+  object-position: 0 -1rem;
 }
 
 .card {
-  padding: 1.5em 1em; 
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+  border-radius: 15px;
+  padding: 1.5em 1em;
+  background-color: var(--Dark-blue);
+}
+
+.hide-temp {
+  display: none;
 }
