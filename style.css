@@ -72,7 +72,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   min-height: 100lvh;
-  overflow: auto;
+  /* overflow: auto; */
 }
 main {
   margin: 0 1em;
@@ -84,7 +84,7 @@ main {
   flex-flow: column;
   border-radius: 15px;
   /* overflow: hidden; */
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   position: relative;
 }
 
@@ -135,25 +135,69 @@ main {
   height: 5rem;
   display: flex;
   justify-content: end;
-  background-color: var(--Light-red-work);
   padding-right: 1em;
   border-radius: 15px;
 }
 
+.task-icon-work {
+  background-color: var(--Light-red-work);
+}
+.task-icon-play {
+  background-color: var(--Light-red-work);
+}
+.task-icon-study {
+  background-color: var(--Light-red-work);
+}
+.task-icon-exercise {
+  background-color: var(--Light-red-work);
+}
+.task-icon-social {
+  background-color: var(--Light-red-work);
+}
+.task-icon-self-care {
+  background-color: var(--Light-red-work);
+}
+
 .task-icon img {
-  object-position: 0 -1rem;
+  object-position: 0 -0.7em;
+}
+
+.card-col-gap {
+  margin-bottom: 5em ;
 }
 
 .card {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   position: absolute;
-  top: 2rem;
+  top: 2em;
   border-radius: 15px;
   padding: 1.5em 1em;
   background-color: var(--Dark-blue);
+  
 }
 
-.hide-temp {
-  display: none;
+.current {
+  color: #fff;
 }
+.current p {
+  font-weight: 500;
+  /* margin-bottom: 1rem; */
+}
+.current h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.previous {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.previous img {
+  margin-bottom: 1em;
+}
+
+
