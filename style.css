@@ -19,7 +19,7 @@
   --Violet-social: hsl(264, 64%, 52%);
 
   /* (self care) */
-  --Soft-orang-self-care: hsl(43, 84%, 65%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
 
   /* Neutral Colors */
   --Very-dark-blue: hsl(226, 43%, 10%);
@@ -143,19 +143,19 @@ main {
   background-color: var(--Light-red-work);
 }
 .task-icon-play {
-  background-color: var(--Light-red-work);
+  background-color: var(--Soft-blue-play);
 }
 .task-icon-study {
-  background-color: var(--Light-red-work);
+  background-color: var(--Light-red-study);
 }
 .task-icon-exercise {
-  background-color: var(--Light-red-work);
+  background-color: var(--Lime-green-exercise);
 }
 .task-icon-social {
-  background-color: var(--Light-red-work);
+  background-color: var(--Violet-social);
 }
 .task-icon-self-care {
-  background-color: var(--Light-red-work);
+  background-color: var(--Soft-orange-self-care);
 }
 
 .task-icon img {
