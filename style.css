@@ -60,6 +60,10 @@ img {
   height: auto;
 }
 
+.pointer:hover{
+  cursor: pointer;
+}
+
 body {
   padding: 0;
   font-family: var(--Rubik);
@@ -72,7 +76,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   min-height: 100lvh;
-  /* overflow: auto; */
+  overflow: auto;
 }
 main {
   margin: 0 1em;
@@ -88,7 +92,7 @@ main {
   position: relative;
 }
 
-.profile {
+.profile-head {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -121,10 +125,10 @@ main {
 .duration {
   display: flex;
   justify-content: space-between;
-  /* background-color: var(--Dark-blue); */
   font-size: var(--font-size);
   padding: 1em;
 }
+
 
 .duration h2 {
   font-size: 1.2rem;
@@ -166,7 +170,7 @@ main {
   margin-bottom: 5em ;
 }
 
-.card {
+.card-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,4 +204,39 @@ main {
   margin-bottom: 1em;
 }
 
+
+@media (width > 40em) {
+  body{
+    /* 
+    height: auto;
+    aspect-ratio: 16/9;
+    flex-flow: row wrap;
+    overflow: hidden; */
+  }
+  
+  main {
+    width: 75vw;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  .profile{
+    flex-basis: 25%;
+
+  }
+
+  .all-cards {
+    flex-basis: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 2em;
+    
+  }
+  .card {
+    flex-basis: 30%;
+  }
+}
 
