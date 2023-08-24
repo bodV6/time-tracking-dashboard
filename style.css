@@ -82,6 +82,10 @@ main {
   margin: 0 1em;
 }
 
+.profile{
+  margin-top: 3em;
+}
+
 .card-container {
   background-color: var(--Dark-blue);
   display: flex;
@@ -135,6 +139,10 @@ main {
   font-weight: 300;
 }
 
+.all-cards {
+  margin-bottom: 8em;
+}
+
 .task-icon {
   height: 5rem;
   display: flex;
@@ -163,7 +171,8 @@ main {
 }
 
 .task-icon img {
-  object-position: 0 -0.7em;
+  object-position: 0 -0.2em;
+  height: 85%;
 }
 
 .card-col-gap {
@@ -233,6 +242,7 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
     row-gap: 2em;
+    /* margin-bottom: 10em; */
     
   }
   .card {
